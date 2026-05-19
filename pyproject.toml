@@ -1,0 +1,28 @@
+[project]
+name = "pipecat-content-filter-fallback"
+version = "0.1.0"
+description = "Pipecat FrameProcessor that catches Azure OpenAI content-filter false positives and replaces them with a fallback assistant turn."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Deepak Dhingra", email = "dpkdhingra91@gmail.com"}]
+keywords = ["pipecat", "voice", "voice-agents", "azure-openai", "rai", "content-filter", "ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "pipecat-ai>=0.0.50",
+]
+
+[project.urls]
+Homepage = "https://github.com/dpkdhingra91/pipecat-content-filter-fallback"
+Issues = "https://github.com/dpkdhingra91/pipecat-content-filter-fallback/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
