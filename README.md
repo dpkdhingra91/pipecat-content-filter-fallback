@@ -84,6 +84,12 @@ Where `relaxed-v1` has `severityThreshold=High` on Hate/Sexual/Violence/Selfharm
 
 Extracted from a production voice-interview pipeline (Sarvam STT → Azure OpenAI gpt-4.5 → Sarvam TTS via Pipecat) where ~1 in 300 turns was triggering an Azure RAI false positive. The processor + relaxed policy together dropped the silent-bot rate from "user-noticeable, weekly" to "log-only, monthly."
 
+## Related projects
+
+- 🎯 [`pipecat-sarvam-azure-starter`](https://github.com/dpkdhingra91/pipecat-sarvam-azure-starter) — canonical Sarvam + Azure voice pipeline this processor was extracted from.
+- 💾 [`pipecat-transcript-checkpoint`](https://github.com/dpkdhingra91/pipecat-transcript-checkpoint) — per-turn transcript persistence sibling.
+- 🎙️ [`pipecat-bot-speaking-observer`](https://github.com/dpkdhingra91/pipecat-bot-speaking-observer) — turn-gate orchestration sibling.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
